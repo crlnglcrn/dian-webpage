@@ -1,0 +1,85 @@
+ul{
+    list-style-type:none;
+    gap:15px;
+    margin:15px;
+    display:flex
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink:1;
+    background-color: yellow;
+    height:48px;
+    
+}
+
+.body-welcome{
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    height:360px;
+    margin:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-information ,
+.gallery-heading ,
+.trivia-heading ,
+.contact-information-heading{
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin:0;
+}
+
+.bio{
+    background-color: green;
+    display:flex;
+    justify-content: space-evenly;
+    margin:0px;
+}
+
+
+.gallery{
+background-color: red;
+display: flex;
+flex:0 1 0;
+padding: 10px;
+gap:15px;
+margin:0px;
+}
+
+.photo{
+    margin:0px;
+    width:150px;
+    flex-wrap: wrap;
+}
+
+.trivia{
+    display: flex;
+  margin:10px;
+  gap:10px;
+  flex-wrap: wrap;
+}
+
+.trivia-body{
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    width: 200px;
+}
+
+.contact-information{
+    display: flex;
+    gap:16px;
+}
