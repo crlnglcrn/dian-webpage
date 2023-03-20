@@ -7,14 +7,17 @@ ul{
 
 
 
-.header {
+.navbar {
     display: flex;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
     justify-content: space-between;
     align-items: center;
     flex-shrink:1;
     background-color: yellow;
     height:48px;
-    
 }
 
 .introduction{
@@ -28,6 +31,9 @@ ul{
     border-bottom:2px solid black;
 }
 
+img{
+    border-radius: 150px;
+}
 .body {
     display:flex;
   

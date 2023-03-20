@@ -8,25 +8,30 @@
     <title>MNL48 Dian</title>
 </head>
 <body>
-    <div class="header">
-        <img length=35px width=35px class="header-image" src="images/dian-bio1.png" alt="MNL48 Dian Icon">
+    <nav class="navbar">
+        <a href="#introduction">
+            <img length=35px width=35px class="header-image" src="images/dian-bio1.png" alt="MNL48 Dian Icon">
+        </a>
         <ul>
-            <li>Bio</li>
-            <li>Gallery</li>
-            <li>Trivia</li>
-            <li>SNS</li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#trivia">Trivia</a></li>
+            <li><a href="#contact-information">SNS</a></li>
          </ul>
-    </div>
-    <div class="introduction">
+    </nav>
+    <div id="introduction" class="introduction">
         <h1 class="title">Welcome!</h1>
         <div class="body">
             <p>This is a fansite dedicated to MNL48 Dian. Dian is a first generation member of MNL48. Her catchphrase is "I'm the sunshine of MNL48, I'm Dian!"</p>
-            <img length=200px width=200px src="images/dian-profile-photo.jpg" alt="Dian Profile Picture">
+            <img class="welcome-picture" length=200px width=200px src="images/dian-profile-photo.jpg" alt="Dian Profile Picture">
         </div>
-        <button>Play</button>
+        <button onclick="snd.play()">Play</button>
+        <script>
+            var snd = new Audio("sounds/dian.mp3")
+        </script>
     </div>
     
-    <div class="bio">
+    <div id="bio" class="bio">
         <div>
         <h1 class="title">Personal Information</h1>
         </div>
@@ -53,7 +58,7 @@
         </div>
     </div>
     
-    <div class="gallery">
+    <div id="gallery" class="gallery">
         <div>
         <h1 class="title">Gallery</h1>
         </div>
@@ -86,7 +91,7 @@
     </div>
     
     
-    <div class="trivia">
+    <div id="trivia" class="trivia">
         <div>
         <h1 class="title">Trivia</h1>
         </div>
@@ -100,7 +105,7 @@
         </div>
     </div>
      
-     <div class="contact-information">
+     <div id="contact-information" class="contact-information">
         <h1 class="title">MNL48 Dian's SNS</h1>
             <div class="contact-row">
                 <img width="45px" src="images/facebook.png"> 
