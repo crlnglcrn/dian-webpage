@@ -17,12 +17,20 @@ ul{
     
 }
 
-.body-welcome{
+.introduction{
     background-color: aliceblue;
     display:flex;
+    flex-direction: column;
     align-items: center;
     height:360px;
     margin:0;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.body {
+    display:flex;
+  
 }
 
 body {
@@ -30,44 +38,63 @@ body {
     flex-direction: column;
 }
 
-.personal-information ,
-.gallery-heading ,
-.trivia-heading ,
-.contact-information-heading{
-    font-size: 36px;
-    font-weight: 900;
-    text-align: center;
-    margin:0;
-}
-
 .bio{
     background-color: green;
     display:flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     margin:0px;
+    border-bottom:2px solid black;
+}
+
+.bio-information{
+    display:flex;
+   
+    gap:50px;
+    margin:10px;
 }
 
 
 .gallery{
 background-color: red;
 display: flex;
-flex:0 1 0;
-padding: 10px;
-gap:15px;
-margin:0px;
+flex-direction: column;
+align-items: center;
+border-bottom:2px solid black;
+
 }
 
+.photo-container{
+    display:flex;
+    padding: 10px;
+gap:15px;
+margin:0px;
+flex-shrink: 1;
+flex-flow: row wrap;
+
+}
 .photo{
     margin:0px;
     width:150px;
-    flex-wrap: wrap;
+    flex-shrink: 1;
+    overflow-wrap: normal;
 }
 
 .trivia{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    border-bottom:2px solid black;
+}
+
+.trivia-container{
+display:flex;
   margin:10px;
   gap:10px;
   flex-wrap: wrap;
+  justify-content: center;
+ 
 }
 
 .trivia-body{
@@ -77,9 +104,51 @@ margin:0px;
     padding: 16px;
     margin: 16px;
     width: 200px;
+
 }
 
 .contact-information{
     display: flex;
-    gap:16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(7, 120, 219);
+    border-bottom:2px solid black;
+}
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:300px;
+    gap: 5px;
+    flex:1,1,auto;
+   
+}
+
+.title{
+    font-weight: 800px;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.footer{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+    margin-top:150px;
+}
+
+a:link{
+    color: rgb(43, 0, 255);
+}
+a:visited{
+    color: rgb(21, 0, 255);
+}
+a:hover {
+    color:rgb(255, 157, 0)
+}
+a:active{
+    color: blue;
 }
