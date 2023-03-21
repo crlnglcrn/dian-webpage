@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>MNL48 Dian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
+
         <a href="#introduction">
             <img length=35px width=35px class="header-image" src="images/dian-bio1.png" alt="MNL48 Dian Icon">
         </a>
@@ -20,15 +24,17 @@
          </ul>
     </nav>
     <div id="introduction" class="introduction">
-        <h1 class="title">Welcome!</h1>
-        <div class="body">
-            <p>This is a fansite dedicated to MNL48 Dian. Dian is a first generation member of MNL48. Her catchphrase is "I'm the sunshine of MNL48, I'm Dian!"</p>
-            <img class="welcome-picture" length=200px width=200px src="images/dian-profile-photo.jpg" alt="Dian Profile Picture">
+        <div class="media-box">
+                <div class="text-box">
+                    <h1 class="title">Welcome!</h1>
+                    <p>This is a fansite dedicated to MNL48 Dian. Dian is a first generation member of MNL48. Her catchphrase is "I'm the sunshine of MNL48, I'm Dian!"</p>
+                    <button onclick="snd.play()">Play</button>
+             <script>
+                var snd = new Audio("sounds/dian.mp3")
+             </script>
         </div>
-        <button onclick="snd.play()">Play</button>
-        <script>
-            var snd = new Audio("sounds/dian.mp3")
-        </script>
+        <img class="welcome-picture" length=200px width=200px src="images/dian-profile-photo.jpg" alt="Dian Profile Picture">
+        </div>
     </div>
     
     <div id="bio" class="bio">

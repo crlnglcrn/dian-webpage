@@ -5,7 +5,9 @@ ul{
     display:flex
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 .navbar {
     display: flex;
@@ -16,58 +18,100 @@ ul{
     justify-content: space-between;
     align-items: center;
     flex-shrink:1;
-    background-color: yellow;
     height:48px;
+    background-color:rgb(170, 230, 252);
+    margin-bottom: 45px;
+   
+    
 }
 
 .introduction{
-    background-color: aliceblue;
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height:360px;
-    margin:0;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+    border-bottom: solid black 2px;
+    background-image: linear-gradient( 60deg, rgba(255, 237, 183, 0.85), rgba(0, 162, 255, 0.5) ), url(https://media.architecturaldigest.com/photos/5ab53b6e2ed63a101d561e70/16:9/w_2560%2Cc_limit/Tout-Hamburg.jpg);
+    background-position: center;
+    background-size: cover;
+ 
 }
 
+.media-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 128px 72px 72px;
+    gap: 24px;
+    padding: 32px;
+    border: 3px solid skyblue;
+    border-radius: 200px;
+    box-shadow: 2px 2px 20px 2px;
+    background: linear-gradient( 60deg, rgba(255, 237, 183, 0.85), rgba(0, 162, 255, 0.5));
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-start;
+    gap:0px;
+    padding-left: 24px;
+}
+
+button{
+    font-weight: 900;
+    padding: 4px 24px;
+    border-radius: 4px;
+    background-color: rgb(230, 250, 250);
+    align-self: center;
+}
 img{
     border-radius: 150px;
 }
 .body {
-    display:flex;
-  
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 32px;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Patua One', cursive;
 }
 
 .bio{
-    background-color: green;
+    background-color: rgb(239, 213, 16);
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin:0px;
     border-bottom:2px solid black;
+    padding-bottom: 50px;
 }
 
 .bio-information{
     display:flex;
-   
-    gap:50px;
+   justify-content: center;
+    gap:150px;
     margin:10px;
 }
 
 
 .gallery{
-background-color: red;
+background-image:linear-gradient( 70deg,rgba(255, 237, 183, 0.85), rgba(0, 162, 255, 0.5) ) , url(https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-6/252045701_106503425167545_9192782607440180782_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFSoZDNWLMFuFOeL_uXMj-Mf6fijtNmdRF_p-KO02Z1EdgR5e7F5-buVe6W_Td_7ibNvkINGNAAqcFleQy9Apob&_nc_ohc=dpT1_VE3tqsAX9y0bl3&_nc_ht=scontent.fmnl9-4.fna&oh=00_AfBdXRrsrDSAS5v_bqfC6rnE-HT7IeMKrqFdx-sWWDGVYQ&oe=641F992A);
+background-position:center;
+background-size:cover;
 display: flex;
 flex-direction: column;
 align-items: center;
 border-bottom:2px solid black;
-
+text-align: center;
 }
 
 .photo-container{
@@ -118,8 +162,10 @@ display:flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(7, 120, 219);
     border-bottom:2px solid black;
+    background-image:linear-gradient( 50deg,rgba(255, 237, 183, 0.85), rgba(0, 162, 255, 0.5) ) , url(https://img-aws.ehowcdn.com/877x500p/s3-us-west-1.amazonaws.com/contentlab.studiod/getty/fe62c4c1413a458da867262378095a7b);
+    background-position:center;
+    background-size:cover;
 }
 
 .contact-row{
@@ -134,8 +180,10 @@ display:flex;
 
 .title{
     font-weight: 800px;
-    font-size: 50px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 48px;
+    font-family:'Titan One', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
 }
 
 .footer{
